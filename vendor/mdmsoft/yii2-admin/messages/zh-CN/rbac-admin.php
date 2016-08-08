@@ -1,0 +1,100 @@
+<?php
+/**
+ * Message translations for \mdmsoft\yii2-admin.
+ *
+ * It contains the localizable messages extracted from source code.
+ * You may modify this file by translating the extracted messages.
+ *
+ * Each array element represents the translation (value) of a message (key).
+ * If the value is empty, the message is considered as not translated.
+ * Messages that no longer need translation will have their translations
+ * enclosed between a pair of '@@' marks.
+ *
+ * Message string can be used with plural forms format. Check i18n section
+ * of the guide for details.
+ *
+ * NOTE: this file must be saved in UTF-8 encoding.
+ */
+return [
+    'Assignments' => '分配',
+    'Users' => '用户列表',
+    'User' => '用户',
+    'Create User' => '新增用户',
+    'Avaliable' => '可用',
+    'Assigned' => '分配',
+    'Create' => '新增',
+    'Update' => '更新',
+    'Roles' => '角色列表',
+    'Create Role' => '创建角色',
+    'Name' => '名称',
+    'Type' => '类型',
+    'Description' => '描述',
+    'Rule Name' => '规则名称',
+    'Data' => '数据',
+    'Update Role' => '更新角色',
+    'Delete' => '删除',
+    'Are you sure to delete this item?' => '确认要删除吗?',
+    'ID' => 'ID',
+    'Parent' => '父级',
+    'Parent Name' => '父级名称',
+    'Route' => '路由',
+    'Username' => '用户名',
+    'Update Permission' => '更新权限',
+    'Permissions' => '权限列表',
+    'Permission' => '权限',
+    'Create Permission' => '新增权限',
+    'Create Permissions' => '新增权限列表',
+    'Routes' => '路由列表',
+    'Create route' => '新增路由',
+    'New' => '新增',
+    'Generate Routes' => '生成路由',
+    'Append' => '追加',
+    'Create Rule' => '新增规则',
+    'Rules' => '规则列表',
+    'Update Rule' => '更新规则',
+    'Create Menu' => '新增菜单',
+    'Menus' => '菜单列表',
+    'Search' => '查询',
+    'Reset' => '重置',
+    'Update Menu' => '更新菜单',
+    'Order' => '排序',
+    'Class Name' => '类名',
+    'Assignment' => '分配',
+    'Role' => '角色',
+    'Rule' => '规则',
+    'Menu' => '菜单',
+    'Help' => '帮助',
+    'Application' => '应用',
+	'Email' => '邮箱',
+	'Status' => '状态',
+	'Created At' => '创建时间',
+	'Change Password' => '修改密码',
+	'Old Password' => '旧密码',
+	'New Password' => '新密码',
+	'Retype Password' => '重复密码',
+	'Change' => '修改',
+	'Add' => '添加',
+	'New route(s)' => '新的路由(s)',
+	'Search for avaliable' => '搜索可用',
+	'Search for assigned' => '搜索分配',
+	'Activate' => '启用',
+	'Signup' => '注册',
+	'Login' => '登录',
+	'Logout' => '登出',
+	'Send' => '发送',
+	'Create New' => '创建新的',
+	'Are you sure you want to activate this user?' => '你确定要激活此用户？',
+	'Select Rule' => '选择规则',
+	'Password' => '密码',
+	'My Application' => '我的应用程序',
+	'Remember Password' => '记住密码',
+	'Sure' => '确定',
+	'Welcome To My Application.' => '欢迎来到我的应用程序。',
+	'Home' => '主页',
+	'Registrant' => '登录者',
+	'Online' => '在线',
+	'Toggle Navigation' => '切换导航',
+	'APP' => '应用',
+	'Inactive' => '待用',
+	'Active' => '启用',
+];

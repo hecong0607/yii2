@@ -25,4 +25,5 @@ return [
 	'Create' => '创建',
 	'Update' => '修改',
 	'Delete' => '删除',
+	'Are you sure you want to delete this item?' => '确认要删除吗?',
 ];

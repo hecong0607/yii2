@@ -180,14 +180,15 @@ class UserController extends Controller
      */
     public function actionRequestPasswordReset()
     {
+		$this->layout = 'main-index';
         $model = new PasswordResetRequest();
         if ($model->load(Yii::$app->getRequest()->post()) && $model->validate()) {
             if ($model->sendEmail()) {
-                Yii::$app->getSession()->setFlash('success', 'Check your email for further instructions.');
+                Yii::$app->getSession()->setFlash('success', Yii::t('rbac-admin', 'Check your email for further instructions.'));
 
                 return $this->goHome();
             } else {
-                Yii::$app->getSession()->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
+                Yii::$app->getSession()->setFlash('error', Yii::t('rbac-admin', 'Sorry, we are unable to reset password for email provided.'));
             }
         }
 
@@ -202,6 +203,7 @@ class UserController extends Controller
      */
     public function actionResetPassword($token)
     {
+		$this->layout = 'main-index';
         try {
             $model = new ResetPassword($token);
         } catch (InvalidParamException $e) {
@@ -209,7 +211,7 @@ class UserController extends Controller
         }
 
         if ($model->load(Yii::$app->getRequest()->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->getSession()->setFlash('success', 'New password was saved.');
+            Yii::$app->getSession()->setFlash('success', Yii::t('rbac-admin', 'New password was saved.'));
 
             return $this->goHome();
         }

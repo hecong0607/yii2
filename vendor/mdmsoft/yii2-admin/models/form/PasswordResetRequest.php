@@ -49,7 +49,7 @@ class PasswordResetRequest extends Model
 
             if ($user->save()) {
                 return Yii::$app->mailer->compose(['html' => 'passwordResetToken-html', 'text' => 'passwordResetToken-text'], ['user' => $user])
-                    ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
+                    ->setFrom([Yii::$app->params['adminEmail'] => Yii::$app->name . ' robot'])
                     ->setTo($this->email)
                     ->setSubject('Password reset for ' . Yii::$app->name)
                     ->send();
@@ -58,4 +58,14 @@ class PasswordResetRequest extends Model
 
         return false;
     }
+
+	/**
+	 * @inheritdoc
+	 */
+	public function attributeLabels()
+	{
+		return [
+			'email' => Yii::t('rbac-admin', 'Email'),
+		];
+	}
 }

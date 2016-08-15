@@ -10,8 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * Class ShopController
- * @package backend\controllers
+ * ShopController implements the CRUD actions for shop model.
  */
 class ShopController extends Controller
 {

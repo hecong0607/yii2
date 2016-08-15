@@ -97,4 +97,12 @@ return [
 	'APP' => '应用',
 	'Inactive' => '待用',
 	'Active' => '启用',
+	'Check your email for further instructions.' => '检查你的电子邮件的进一步说明。',
+	'Sorry, we are unable to reset password for email provided.' => '很抱歉，我们无法为您提供的电子邮件重置密码。',
+	'New password was saved.' => '新密码被保存。',
+	'Reset Password' => '重置密码',
+	'Please choose your new password:' => '请选择您的新密码：',
+	'Please fill out your email. A link to reset password will be sent there.' => '请填写您的电子邮件。重置密码的链接将在那里发送。',
+	'Request Password Reset' => '申请密码重置',
+	'Forget Password' => '忘记密码',
 ];

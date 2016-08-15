@@ -51,4 +51,7 @@ return [
 	'APP' => 'APP',
 	'Change Password' => 'Change Password',
 	'Email' => 'Email',
+	'Reset Password' => 'Reset Password',
+	'Forget Password' => 'Forget Password',
+	'VerifyCode' => 'VerifyCode',
 ];

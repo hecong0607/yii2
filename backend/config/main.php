@@ -63,6 +63,9 @@ return [
 			'tg/*',//允许访问的节点，可自行添加
 			'shop/*',//允许访问的节点，可自行添加
 //			'admin/*',//允许所有人访问admin节点及其子节点
+			'admin/user/reset-password',
+			'admin/user/request-password-reset',
+			'site/captcha',
 		]
 	],
 	'params'              => $params,

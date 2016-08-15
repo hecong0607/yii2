@@ -50,4 +50,7 @@ return [
 	'APP' => '应用',
 	'Change Password' => '修改密码',
 	'Email' => '邮箱',
+	'Reset Password' => '重置密码',
+	'Forget Password' => '忘记密码',
+	'VerifyCode' => '验证码',
 ];

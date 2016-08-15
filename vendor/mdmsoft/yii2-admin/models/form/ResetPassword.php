@@ -61,4 +61,13 @@ class ResetPassword extends Model
 
         return $user->save(false);
     }
+	/**
+	 * @inheritdoc
+	 */
+	public function attributeLabels()
+	{
+		return [
+			'password' => Yii::t('rbac-admin', 'Password'),
+		];
+	}
 }

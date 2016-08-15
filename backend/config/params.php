@@ -1,6 +1,6 @@
 <?php
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => '765707000@qq.com',
 	'mdm.admin.configs' => [
 		'db' => 'db',
 		'menuTable' => '{{%menu}}',

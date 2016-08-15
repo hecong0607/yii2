@@ -98,4 +98,12 @@ return [
 	'APP' => 'APP',
 	'Inactive' => 'Inactive',
 	'Active' => 'Active',
+	'Check your email for further instructions.' => 'Check your email for further instructions.',
+	'Sorry, we are unable to reset password for email provided.' => 'Sorry, we are unable to reset password for email provided.',
+	'New password was saved.' => 'New password was saved.',
+	'Reset Password' => 'Reset Password',
+	'Please choose your new password:' => 'Please choose your new password:',
+	'Please fill out your email. A link to reset password will be sent there.' => 'Please fill out your email. A link to reset password will be sent there.',
+	'Request Password Reset' => 'Request password reset',
+	'Forget Password' => 'Forget Password',
 ];

@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -39,6 +40,13 @@ $fieldOptions2 = [
             ->label(false)
             ->passwordInput(['placeholder' => $model->getAttributeLabel(Yii::t('rbac-admin', 'Password'))]) ?>
 
+		<?= $form->field($model, 'verifyCode')
+			->label(false)
+			->widget(Captcha::className())?>
+
+		<a href="<?= \yii\helpers\Url::toRoute('/admin/user/request-password-reset')?>" class="dropdown-toggle" data-method="post" >
+			<span class="hidden-xs"><?= Html::encode(Yii::t('rbac-admin', 'Forget Password')) ?></span>
+		</a>
         <div class="row">
             <div class="col-xs-8">
                 <?= $form->field($model, 'rememberMe')->checkbox()->label(Yii::t('rbac-admin', 'Remember Password')) ?>

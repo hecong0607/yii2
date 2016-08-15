@@ -21,7 +21,7 @@ class SiteController extends Controller
 				'class' => AccessControl::className(),
 				'rules' => [
 					[
-						'actions' => ['login', 'error'],
+						'actions' => ['login', 'error', 'captcha'],
 						'allow'   => true,
 					],
 					[
@@ -43,14 +43,19 @@ class SiteController extends Controller
 	/**
 	 * @inheritdoc
 	 */
-//    public function actions()
-//    {
-//        return [
+    public function actions()
+    {
+        return [
 //            'error' => [
 //                'class' => 'yii\web\ErrorAction',
 //            ],
-//        ];
-//    }
+			'captcha' => [
+				'class' => 'yii\captcha\CaptchaAction',
+				'maxLength' => 4,
+				'minLength' => 4
+			],
+		];
+    }
 
 	public function actionIndex() {
 		return $this->render('index');

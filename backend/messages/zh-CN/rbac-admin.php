@@ -53,4 +53,5 @@ return [
 	'Reset Password' => '重置密码',
 	'Forget Password' => '忘记密码',
 	'VerifyCode' => '验证码',
+	'Incorrect username or password.' => '用户名或密码错误。',
 ];

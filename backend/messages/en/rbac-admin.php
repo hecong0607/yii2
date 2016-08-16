@@ -54,4 +54,5 @@ return [
 	'Reset Password' => 'Reset Password',
 	'Forget Password' => 'Forget Password',
 	'VerifyCode' => 'VerifyCode',
+	'Incorrect username or password.' => 'Incorrect username or password.',
 ];

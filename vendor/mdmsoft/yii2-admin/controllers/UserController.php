@@ -32,21 +32,21 @@ class UserController extends Controller
     public function behaviors()
     {
         return [
-//            'access' => [
-//                'class' => AccessControl::className(),
-//                'rules' => [
-//                    [
-//                        'actions' => ['signup', 'reset-password', 'login', 'request-password-reset'],
-//                        'allow' => true,
-//                        'roles' => ['?'],
-//                    ],
-//                    [
-//                        'actions' => ['logout', 'change-password', 'index', 'view', 'delete', 'activate'],
-//                        'allow' => true,
-//                        'roles' => ['@'],
-//                    ],
-//                ],
-//            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['reset-password', 'request-password-reset'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['signup', 'change-password', 'index', 'view', 'delete', 'activate'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -129,7 +129,7 @@ class UserController extends Controller
      * Login
      * @return string
      */
-    public function actionLogin()
+    private function actionLogin()
     {
         if (!Yii::$app->getUser()->isGuest) {
             return $this->goHome();
@@ -149,7 +149,7 @@ class UserController extends Controller
      * Logout
      * @return string
      */
-    public function actionLogout()
+    private function actionLogout()
     {
         Yii::$app->getUser()->logout();
 

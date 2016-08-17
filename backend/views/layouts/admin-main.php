@@ -14,6 +14,11 @@ if (Yii::$app->controller->action->id === 'login') {
         'main-login',
         ['content' => $content]
     );
+} elseif(Yii::$app->controller->action->id === 'error'){
+	echo $this->render(
+		'main',
+		['content' => $content]
+	);
 } else {
 
 	backend\assets\AppAsset::register($this);

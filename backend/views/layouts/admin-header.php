@@ -21,7 +21,7 @@ use yii\helpers\Html;
 
                 <!-- User Account: style can be found in dropdown.less -->
                  <li class="dropdown user user-menu">
-                    <a href="<?= \yii\helpers\Url::toRoute('/admin/user/logout')?>" class="dropdown-toggle" data-method="post" >
+                    <a href="<?= \yii\helpers\Url::toRoute('/site/logout')?>" class="dropdown-toggle" data-method="post" >
                         <img src="<?= $directoryAsset.'/img/user2-160x160.jpg' ?>" class="user-image" alt="User Image"/>
                         <span class="hidden-xs"><?= Html::encode(Yii::t('rbac-admin', 'Logout')) ?></span>
                     </a>

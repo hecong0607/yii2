@@ -23,7 +23,6 @@ class SiteController extends Controller
 					[
 						'actions' => ['login', 'error', 'captcha'],
 						'allow'   => true,
-						'roles'   => ['?'],
 					],
 					[
 						'actions' => ['logout', 'index'],
@@ -47,13 +46,13 @@ class SiteController extends Controller
     public function actions()
     {
         return [
-//            'error' => [
-//                'class' => 'yii\web\ErrorAction',
-//            ],
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
 			'captcha' => [
 				'class' => 'yii\captcha\CaptchaAction',
-				'maxLength' => 4,
-				'minLength' => 4
+				'maxLength' => 5,
+				'minLength' => 5
 			],
 		];
     }
@@ -83,10 +82,6 @@ class SiteController extends Controller
 		return $this->goHome();
 	}
 
-	public function actionError() {
-		$this->layout = 'main';
-		return $this->render('error');
-	}
 
 
 
